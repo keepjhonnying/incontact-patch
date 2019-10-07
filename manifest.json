@@ -1,0 +1,53 @@
+{
+  "name": "inContact Patch",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Funções Extras para o inContact\nDesenvolvimento: Jhonny Ilis\nIcones: Humberto Neto",
+  "homepage_url": "https://unisyscorp.sharepoint.com/portals/hub/personal/jhonnyilis",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": false
+  },
+  //"options_page": "src/options_custom/index.html",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "contextMenus",
+    "clipboardRead",
+    "clipboardWrite",
+    "contentSettings",
+    "cookies",
+    "history",
+    "management",
+    "notifications",
+    "https://max.niceincontact.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://max.niceincontact.com/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ],
+       "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://max.niceincontact.com/*"
+      ],
+      "js": [
+        "js/jquery-3.4.1.min.js",
+        "src/inject/inj.js"
+      ],
+      "all_frames": true,
+       "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+body {
+	/*background-color: #241c4e !important;*/
+}
+
+#uimanager_container .ui-manager .glance {
+
+	/*background-color: #000000 !important;*/
+
+}
+
+.glance-workspace{
+	/*background-image: */
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
+
+#inContactPatch-chat button{
+	font-family: "robotoregular","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+	background-color: #3498db;
+    display: block;
+    width: 80%;
+    padding: 10px 10px;
+    margin: 9%;
+}
+
+#chat2minstop, #chat2callstop, #stopchat2continue{
+	background-color: #ff0000 !important;
+}
+
+
+#inContactPatch-call {
+	display: block;
+    height: 70px;
+    width: 100%;
+    background: #ff00002b;
+    float: right;
+    position: absolute;
+    bottom: 0;
+}
+
+#inContactPatch-call button {
+    font-family: "robotoregular","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    background-color: #3498db;
+    /* display: block; */
+    /* width: 80%; */
+    /* padding: 10px 10px; */
+    margin: 1% 4%;
+}
