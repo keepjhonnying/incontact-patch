@@ -185,8 +185,8 @@
 
 	function notify(type) {
 	    switch(type) {
-	      case 'retorno2min'
-	        not2minChat = new Notification('Retorno de 2min', { body: 'Retorno de 2min', icon: notifyiConStrike });
+	      case 'retorno2min':
+	        var not2minChat = new Notification('Retorno de 2min', { body: 'Retorno de 2min', icon: notifyiConStrike });
 	        not2minChat.onclick = function(event) {
 					window.focus()
 					this.close()
@@ -195,7 +195,7 @@
 	        };
 	      break;
 	      case 'strike':
-	        not2minChat = new Notification('Strike', { body: 'Strike 2min', icon: notifyiConStrike });
+	        var not2minChat = new Notification('Strike', { body: 'Strike 2min', icon: notifyiConStrike });
 	        not2minChat.onclick = function(event) {
 					window.focus()
 					document.getElementById('chatworkspaceui-0').getElementsByClassName('message-text-input')[0].focus()
@@ -204,7 +204,7 @@
 	        };
 	      break;
 	      case 'call':
-	        not2minChat = new Notification('Retorno de 2min', { body: 'Retorno de 2min', icon: notifyiConReturn });
+	        var not2minChat = new Notification('Retorno de 2min', { body: 'Retorno de 2min', icon: notifyiConReturn });
 	        not2minChat.onclick = function(event) {
 					window.focus()
 					this.close();
